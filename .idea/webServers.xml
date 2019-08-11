@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9cd226e2-344d-40ab-9acf-0431c2a5607b" name="Anibook" url="http://anibook.com.br">
+        <fileTransfer host="anibook.com.br" port="21" rootFolder="/domains/anibook.com.br/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

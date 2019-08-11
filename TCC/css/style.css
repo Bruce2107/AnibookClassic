@@ -1,0 +1,17 @@
+body{
+	background-color: #C0C0C0;
+	margin-top: 50px; 
+}
+
+#form{
+	background-color: #DCDCDC;
+	border-radius: 10px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 30px; 
+}
+
+.nav{
+	background-color: black;
+	
+}

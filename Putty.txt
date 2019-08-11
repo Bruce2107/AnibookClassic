@@ -1,0 +1,18 @@
+Abra o Putty
+Entre na sua area
+IP: 143.106.241.1
+Port: 1609
+User: cl17***
+Password: cl*nasc
+
+Digite o comando abaixo durante a prova:
+	cd ../simone/aulas
+Em seguida:
+	ls -l
+Procure pelos arquivos com a data da sua prova e que tenha nome relacionas ao tema da prova, para visualizar o arquivo use o comando:
+	vi nome.extensao
+Agora voce esta vendo parte do conteudo da prova, para navegar pelo resto do arquivo uso o atalho:
+	Aperte ESC e use o h,j,k e l para passear pelo arquivos, ordem: para esquerda, para baixo, para cima e para a direita
+
+Use o site para tirar duvidas:
+	https://canaltech.com.br/linux/conheca-e-aprenda-a-usar-o-editor-vim-no-linux/

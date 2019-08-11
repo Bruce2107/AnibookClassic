@@ -1,0 +1,104 @@
+header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background: #5fbde1;
+  height: 7vh;
+}
+header nav {
+  text-align: center;
+  float: right;
+}
+header nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header nav > ul > li {
+  width: 150px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 15px;
+}
+header nav > ul > li a {
+  font: 1em Impact, fantasy;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 0 20px;
+}
+header nav > ul > li a i {
+  color: #FF0000;
+}
+header nav > ul > li:hover {
+  background-color: rgba(255, 250, 255, 0.7);
+  overflow: hidden;
+}
+header .logo {
+  float: left;
+  padding: 0 20px;
+}
+
+/*nav
+ *  text-align: center
+ *  float: right
+ *  > ul
+ *      list-style: none
+ *      padding: 0
+ *      margin: 0
+ *      display: flex
+ *      > li
+ *          width: 100px
+ *          position: relative
+ *          font-size: 20px
+ *          color: black
+ *          cursor: pointer
+ *          text-transform: uppercase
+ *          a
+ *              // height: 50px
+ *              line-height: 50px
+ *              padding: 0 20px
+ *              display: block
+ *              text-decoration: none   
+ *              i
+ *                  background-color: #FF0000 */
+/*body
+ *  margin: 0
+ *  padding: 0 */
+/*header
+ *  position: fixed
+ *  top: 0
+ *  left: 0
+ *  padding: 0 50px
+ *  background: yellow
+ *  width: 100%
+ *  box-sizing: border-box
+ *  box-shadow: 0 10px 10px black
+ *  z-index: 999
+ *  opacity: 0.9
+ *  .logo
+ *      cursor: pointer
+ *      font:
+ *          weight: bold
+ *          family: Trebuchet MS, sans-serif 
+ *          size: 24px
+ *          style: oblique
+ *      background: -webkit-linear-gradient(100deg,pink,gold)
+ *      -webkit-background-clip: text
+ *      -webkit-text-fill-color: transparent
+ *      float: left
+ *      a
+ *          // height: 50px
+ *          padding: 0 20px
+ *          line-height: 50px
+ *          text-decoration: none
+ *  .logo:hover
+ *      background: -webkit-linear-gradient(100deg,blue,green)
+ *      -webkit-background-clip: text
+ *      -webkit-text-fill-color: transparent  */
+
+/*# sourceMappingURL=nav.css.map */
