@@ -50,3 +50,38 @@ foreach ($a23 as $a){
     echo "<td><input type='button' value='Editar'></td></tr>";
 }
 echo "</table>";*/
+//Funcionado
+/*
+$aluno = new AlunoDados(1,"Eduardo",4,0,null,1,null,null);
+if($fdao->Salvar($aluno,"47535061850turma3"))
+    echo "Dados altarados";
+else echo "Erro ao atualizar";*/
+//Funcionando
+/*
+if($fdao->ApagarTurma("12457896300Eja_1"))
+    echo "Apagada";
+else echo "Nao apagada";*/
+
+//Funcionando
+/*
+if($fdao->Compensar("47535061850turma3"))
+    echo "Compendas";
+else
+    echo "nao compensadas";*/
+//Funcionando
+/*
+if($fdao->CriarTurma("12457896300",'turma1'))
+    echo "Turma criada com sucesso";
+else echo "Erro ao criar a turma";*/
+
+//Funcionando
+//echo $fdao->QtdRegistros("12457896300turma1");
+//Funcionando
+/*$vetor = $fdao->getDadasPrev("47535061850turma1");
+echo "Dadas: ".$vetor[1];
+echo "<br>Previstas: ".$vetor[0];*/
+$aluno = new AlunoDados(0,"Eduardo",0,0,0,1,45,20);
+if($fdao->InsereAluno("12457896300turma1",$aluno))
+    echo "Sucesso";
+else
+    echo "Erro";
