@@ -80,7 +80,8 @@ else echo "Erro ao criar a turma";*/
 /*$vetor = $fdao->getDadasPrev("47535061850turma1");
 echo "Dadas: ".$vetor[1];
 echo "<br>Previstas: ".$vetor[0];*/
-$aluno = new AlunoDados(0,"Eduardo",0,0,0,1,45,20);
+//Funcionando
+$aluno = new AlunoDados(0,"Henrique",0,0,0,1,45,20);
 if($fdao->InsereAluno("12457896300turma1",$aluno))
     echo "Sucesso";
 else
