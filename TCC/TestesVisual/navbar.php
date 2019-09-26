@@ -19,10 +19,9 @@
     <div class="logo"><img src="../oie_transparent.pngi"></div>
     <nav>
         <ul>
-            <li><a href="#"><i class="fas fa-plus-square"></i>Sobre</a></li>
             <li><a href="#"><i class="fas fa-envelope"></i>Contato</a></li>
             <li><a href="#"><i class="fas fa-file-download"></i>Download</a></li>
-
+            <?php echo @$sair ?>
         </ul>
     </nav>
     <div class="menu" alt="Menu"><i class="fas fa-bars"></i></div>

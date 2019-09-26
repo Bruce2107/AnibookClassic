@@ -1,20 +1,26 @@
 <?php
-$m = "";
-    if(strlen(trim($_POST['cpf']) == 0))
-        $m = "<div class=\"alert alert-danger center\" role=\"alert\">Informe o CPF</div>";
+    $m = "";
+    if(isset($_POST['lembrar'])){
+        session_start();
+        $_SESSION['lembrar'] = $_POST['cpf'];
+    }
+    if(strlen(trim($_POST['cpf']) == 0)){
+        $m = "<div class=\"alert alert-danger text-center\" role=\"alert\">Informe o CPF</div>";
+        header('location:pagina1.php?m='.$m);
+    }
     else
-        if(!login($_POST['cpf'],$_POST['senha']))
-            $m = "<div class=\"alert alert-danger center\" role=\"alert\">CPF ou SENHA inválido</div>";
-        else
-            if(isset($_POST['lembrar'])){
-                session_start();
-                $_SESSION['lembrar'] = $_POST['cpf'];
-            }
-header('location:pagina1.php?m='.$m);
+        if(!login($_POST['cpf'],$_POST['senha'])){
+            $m = "<div class=\"alert alert-danger text-center\" role=\"alert\">CPF ou SENHA inválido</div>";
+            header('location:pagina1.php?m='.$m);
+        }
+        else{
+            session_start();
+            $_SESSION['user'] = $_POST['cpf'];
+            header('location:logado.php');
+        }
 /*<div class="alert alert-danger" role="alert">
   A simple danger alert—check it out!
 </div>*/
-
 
 function login($cpf,$senha){
     try{
@@ -27,9 +33,9 @@ function login($cpf,$senha){
         $CPF = $data['cpf'];
         $SENHA = $data['senha'];
         if(password_verify($senha,$SENHA)){
-            /*session_start();
+            session_start();
             $_SESSION['user'] = $CPF;
-            header('location:logado.php');*/
+            header('location:logado.php');
             return true;
         }
     }catch(PDOException $e){
@@ -37,4 +43,3 @@ function login($cpf,$senha){
     }
     return false;
 }
-?>

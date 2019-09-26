@@ -46,8 +46,8 @@ nav > ul > li > a{
     line-height: 50px;
 }
 nav > ul > li > a > i{
-    color: #ff0000;
-    margin-right: 2px;
+    color: #f93b63;
+    margin-right: 4px;
 }
 nav > ul > li > a:hover{
     text-decoration: underline;
@@ -55,7 +55,7 @@ nav > ul > li > a:hover{
     color: deepskyblue;
 }
 nav > ul > li:hover{
-    background-color: rgba(255,250,255,.7)
+    background-color: rgba(255,250,255,1)
 }
 .menu{
     font-size: 24px;
@@ -63,7 +63,7 @@ nav > ul > li:hover{
     display: none;
 }
 .menu i{
-    color: #ff0000;
+    color: #f93b63;
     line-height: 50px;
 }
 @media (max-width: 991px){
@@ -81,7 +81,7 @@ nav > ul > li:hover{
         top: 50px;
         left: -150%;
         transition: 0.5s;
-        background-color: rgba(64, 196, 255,.6);
+        background-color: rgba(95, 189, 225,.8);
         border: 1px #c0c0c0 solid;
         z-index: 999;
     }
