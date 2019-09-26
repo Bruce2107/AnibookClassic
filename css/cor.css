@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Maver-Logo-1-hex { color: #259897; }
+.Maver-Logo-2-hex { color: #1B6B6A; }
+.Maver-Logo-3-hex { color: #444444; }
+.Maver-Logo-4-hex { color: #989898; }
+.Maver-Logo-5-hex { color: #FFFFFF; }
+/*usar background: rgba(36, 151, 151, .3);*/
+/* Color Theme Swatches in RGBA */
+.Maver-Logo-1-rgba { color: rgba(36, 151, 151, 1); }
+.Maver-Logo-2-rgba { color: rgba(26, 107, 105, 1); }
+.Maver-Logo-3-rgba { color: rgba(68, 68, 68, 1); }
+.Maver-Logo-4-rgba { color: rgba(151, 151, 151, 1); }
+.Maver-Logo-5-rgba { color: rgba(255, 255, 255, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Maver-Logo-1-hsla { color: hsla(179, 60, 37, 1); }
+.Maver-Logo-2-hsla { color: hsla(179, 59, 26, 1); }
+.Maver-Logo-3-hsla { color: hsla(0, 0, 26, 1); }
+.Maver-Logo-4-hsla { color: hsla(0, 0, 59, 1); }
+.Maver-Logo-5-hsla { color: hsla(0, 0, 100, 1); }
