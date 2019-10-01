@@ -2,7 +2,7 @@
 include_once "Aluno.php";
     function Conecta(){
         try{
-            $pdo = new PDO('mysql:host=143.106.241.1;dbname=cl17115;charset=utf8;','cl17115','cl*21072001');
+            $pdo = new PDO('mysql:host=143.106.241.3;dbname=cl17115;charset=utf8;','cl17115','cl*21072001');
             $pdo -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             return $pdo;
         }catch(PDOException $e){
