@@ -1,0 +1,388 @@
+main div.info {
+  display: none;
+}
+main div.info a {
+  border: none;
+}
+main .container {
+  margin: 150px auto;
+  border-style: ridge;
+  background: #f5f5f5;
+  display: grid;
+  grid-template-areas: "textos textos textos card";
+  text-align: justify;
+  height: 100%;
+}
+main .container .textos {
+  grid-area: textos;
+  margin-top: 10px;
+}
+main .container .textos div {
+  padding: 15px;
+}
+main .container .textos .personagem {
+  text-align: center;
+  margin: 10px;
+}
+main .container .textos .personagem img {
+  float: left;
+  margin-right: 10px;
+  max-width: 300px;
+}
+main .container .textos .clear {
+  clear: both;
+}
+main .container .textos .titulo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: oblique;
+}
+main .container .textos .fonte {
+  font-size: x-small;
+}
+main .container .textos .nome {
+  font-weight: bold;
+}
+main .container .textos hr {
+  margin: 15px;
+}
+main .container .mangas {
+  height: 600px;
+}
+main .container .animes {
+  height: 1100px;
+}
+main .container .card {
+  grid-area: card;
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+main .container .card .Anime {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main .container .card img {
+  width: 100%;
+}
+main .container .card .video iframe {
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+}
+main .container .accordion {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+main .container .accordion ul {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid #ffd700;
+}
+main .container .accordion ul li {
+  list-style: none;
+  display: inline;
+}
+main .container .accordion ul li span {
+  display: inline-block;
+  width: 19.4%;
+  height: 50px;
+  line-height: 55px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .container .accordion ul li span i {
+  background: -webkit-linear-gradient(90deg, #ff1493, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+main .container .accordion ul li span.active {
+  background: linear-gradient(125deg, #2e86de, #00d2d3);
+  border-bottom: 2px solid #ffd700;
+}
+main .container .accordion ul li .box {
+  position: relative;
+  top: 100%;
+  display: none;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+}
+main .container .accordion ul li .box a {
+  color: #000;
+}
+main .container .accordion ul li .box h1 {
+  margin: 0;
+  padding: 0 0 0 15px;
+  font-size: 24px;
+  border-bottom: 2px solid #ffd700;
+}
+main .container .accordion ul li .box #fotos {
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 3;
+  -moz-column-gap: 5px;
+  column-count: 3;
+  column-gap: 5px;
+}
+main .container .accordion ul li .box #fotos img {
+  border: 1px groove #fff;
+  margin-top: 5px;
+  width: 100% !important;
+  height: 100% !important;
+}
+main .container .accordion ul li .box p {
+  color: #000;
+}
+main .container .accordion ul li .box.active {
+  display: block;
+}
+main .container .accordion ul:hover {
+  border: 2px solid #2e86de;
+}
+main .container .accordion ul:hover li span i {
+  background: -webkit-linear-gradient(100deg, #2e86de, #00d2d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .container .accordion ul:hover li span.active {
+  background: linear-gradient(150deg, #ffd700, #ff1493);
+  border-bottom: 2px solid #2e86de;
+}
+main .container .accordion ul:hover li .box h1 {
+  border-bottom-color: #2e86de;
+}
+main #info {
+  display: none;
+}
+
+.noturno main .container {
+  color: #c0c0c0;
+  background: #333333;
+}
+.noturno main .container .textos .titulo {
+  color: #fff;
+}
+.noturno main .container .textos .fonte a {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+.noturno main .container .Anime {
+  color: #fff;
+}
+.noturno main .accordion ul {
+  border-color: #2e86de;
+}
+.noturno main .accordion ul li span i {
+  background: -webkit-linear-gradient(125deg, #2e86de, #00d2d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.noturno main .accordion ul li span.active {
+  background: linear-gradient(125deg, #ffd700, #ff1493);
+  border-bottom-color: #2e86de;
+}
+.noturno main .accordion ul li .box {
+  background: #333333;
+}
+.noturno main .accordion ul li .box p {
+  color: #c0c0c0;
+}
+.noturno main .accordion ul li .box h1 {
+  border-bottom-color: #2e86de;
+}
+.noturno main .accordion ul:hover {
+  border-color: #ffd700;
+}
+.noturno main .accordion ul:hover li span i {
+  background: -webkit-linear-gradient(100deg, #ffd700, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.noturno main .accordion ul:hover li span.active {
+  background: linear-gradient(150deg, #2e86de, #00d2d3);
+  border-bottom: 2px solid #ffd700;
+}
+.noturno main .accordion ul:hover li .box h1 {
+  border-bottom-color: #ffd700;
+}
+
+@media (max-width: 1200px) {
+  #fotos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #fotos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #fotos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #fotos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+@media (min-width: 601px) {
+  main .container {
+    width: 85%;
+  }
+}
+@media (max-width: 600px) {
+  main .container {
+    font-size: 12px;
+    width: 85%;
+  }
+  main .container .textos .personagem {
+    padding: 0;
+    margin: 0;
+  }
+  main .container .textos .personagem img {
+    width: 100%;
+  }
+  main #info {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  main .container {
+    width: 85%;
+  }
+  main .container .textos .personagem {
+    padding: 0;
+    margin: 0;
+  }
+  main .container .textos .personagem img {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  main .container {
+    padding: 0;
+  }
+  main .container .textos .personagem {
+    padding: 0;
+  }
+  main .container .textos .personagem img {
+    width: 100%;
+  }
+}
+@media (max-width: 335px) {
+  main .container .textos .personagem {
+    padding: 0;
+  }
+  main .container .textos .personagem img {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  main div.info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  main div.info a {
+    background: #ffea00;
+    padding: 10px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+  }
+  main #info {
+    display: grid;
+    height: auto;
+    width: 80%;
+    grid-template-areas: "imagem" "texto" "video";
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+    background: #f5f5f5;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  main #info .Anime {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main #info img {
+    grid-area: imagem;
+    width: 100%;
+    padding-right: 10px;
+  }
+  main #info .video {
+    grid-area: video;
+    padding: 10px;
+  }
+  main #info .video iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  main #info .content {
+    padding: 10px;
+    border: 2px groove #fff;
+    grid-area: texto;
+  }
+  main .container {
+    grid-template-areas: "textos";
+  }
+  main .container .card {
+    display: none;
+  }
+
+  .noturno main div.info a {
+    background: #2e86de;
+    color: #c0c0c0;
+  }
+  .noturno main #info {
+    background: #333333;
+    color: #c0c0c0;
+  }
+}
+.noturno .accordion .box a {
+  color: #fff !important;
+}
+
+@media (max-width: 992px) {
+  header nav {
+    background: rgba(216, 224, 233, 0.9);
+  }
+
+  .noturno header nav {
+    background: rgba(68, 68, 68, 0.9);
+  }
+}
+
+/*# sourceMappingURL=conteudo.css.map */
