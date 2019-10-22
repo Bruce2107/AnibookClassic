@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AniBook - Seu livro de animes online</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A AniBook é uma webpage que buscas comentar diversos animes e mangás apresentando a sinopse, personagens e uma avalição sobre o que achamos da obra">
     <link rel="icon" href="imagens/Anibook.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
@@ -30,6 +31,7 @@
         <div class="menu" alt="Menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
+        <h1 class="tituloH1">AniBook</h1>
         <div class="slide">
             <a><img src="https://images8.alphacoders.com/707/thumb-1920-707447.png" alt="Boku no Hero Academia"></a>
             <a><img src="https://static.zerochan.net/Seitokai.Yakuindomo.full.920804.jpg" alt="Seitokai Yakuindomo"></a>

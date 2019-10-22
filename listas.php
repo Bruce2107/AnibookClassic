@@ -6,6 +6,13 @@
                 function criarCard($link,$nome){
                     return '<div class="card"><div class="layer"></div><div class="conteudo"><div class="imagem"><a><img src="'.$link.'" alt="'.$nome.'"></a></div><br></div></div>';
                 }
+                function removeAcentos($s){
+					$ca = array('à', 'á', 'â', 'ã', 'ä', 'å', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ù', 'ü', 'ú', 'ÿ', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'O', 'Ù', 'Ü', 'Ú');
+					$sa = array('a', 'a', 'a', 'a', 'a', 'a', 'c', 'e', 'e', 'e', 'e', 'i', 'i', 'i', 'i', 'n', 'o', 'o', 'o', 'o', 'o', 'u', 'u', 'u', 'y', 'A', 'A', 'A', 'A', 'A', 'A', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'N', 'O', 'O', 'O', 'O', 'O', '0', 'U', 'U', 'U');
+					return str_replace($ca,$sa,$s);
+				}
+				$t = removeAcentos($titulo);
+				//echo $t;
                 #Conctar com o banco 194.5.156.22
                 /*try{
                     $pdo = new PDO('mysql:host=localhost;dbname=u906779196_pagin;charset=utf8;','u906779196_eduar','RkM9Jt1mcdN9');
@@ -19,7 +26,7 @@
                 $qtd_por_pag = 6;
                 $inicio = ($qtd_por_pag * $pag) - $qtd_por_pag;
                 #Busca dados
-                $command = "SELECT * FROM $titulo LIMIT $inicio,$qtd_por_pag";
+                $command = "SELECT * FROM $t LIMIT $inicio,$qtd_por_pag";
                 try{
                     $resultado = $pdo->query($command);
                     while($row = $resultado->fetch()){
@@ -30,14 +37,14 @@
         </div>
         <div class="pagination">
             <?php
-                $sqlContador = "SELECT COUNT(*) AS num FROM $titulo";
+                $sqlContador = "SELECT COUNT(*) AS num FROM $t";
                 try{
                 $stm = $pdo->prepare($sqlContador);
                 $stm->execute();
                 $valor = $stm->fetch(PDO::FETCH_OBJ);
                 $qtd_pg = ceil($valor->num/$qtd_por_pag);
                 $max_link = 2;
-                $link = lcfirst($titulo);
+                $link = lcfirst($t);
 
                 for($pag_ant = $pag - $max_link; $pag_ant <= $pag - 1; $pag_ant ++){
                     if($pag_ant >=1)

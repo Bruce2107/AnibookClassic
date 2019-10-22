@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b6769d3b-4d37-4cfb-9d43-90a98f84abde" name="TCC" url="http://tcc.anibook.com.br">
+        <fileTransfer host="tcc.anibook.com.br" port="21" rootFolder="/domains/anibook.com.br/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

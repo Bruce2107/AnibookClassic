@@ -1,0 +1,36 @@
+{
+    "cpf": "47535061850",
+    "turma": "turma1",
+    "alunos": [
+        {
+            "id": 2,
+            "nome": "Henrique",
+            "faltas": 0,
+            "compensadas": 0,
+            "compensar": 0,
+            "aulasDadas": 0,
+            "aulasPrevistas": 50,
+            "ativo": 1
+        },
+        {
+            "id": 1,
+            "nome": "Eduardo",
+            "faltas": 0,
+            "compensadas": 0,
+            "compensar": 0,
+            "aulasDadas": 0,
+            "aulasPrevistas": 50,
+            "ativo": 1
+        },
+        {
+            "id": 3,
+            "nome": "Vitoria",
+            "faltas": 0,
+            "compensadas": 0,
+            "compensar": 0,
+            "aulasDadas": 0,
+            "aulasPrevistas": 50,
+            "ativo": 1
+        }
+    ]
+}
